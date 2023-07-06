@@ -40,7 +40,7 @@ Course Notes : [SQLNotes](./udemySql/SQLNotes.pdf)
 
 Short Glance : [tldr](./udemySql/Screen%2BShot%2B2016-04-17%2Bat%2B12.22.49%2BPM.png)
 
-### My SQL commands for each section
+### SQL commands of each section
 
 1. [SQL Statement Fundamentals](./udemySql/SQL%20Statement%20Fundamentals/fundamentals.sql)
 2. [GROUP BY Statements](./udemySql/GROUP%20BY%20Statements/groupByStatements.sql)
