@@ -40,7 +40,7 @@ Course Notes : [SQLNotes](./udemySql/SQLNotes.pdf)
 
 Short Glance : [tldr](./udemySql/Screen%2BShot%2B2016-04-17%2Bat%2B12.22.49%2BPM.png)
 
-## Course Order 
+### Course Order 
 
 1. [SQL Statement Fundamentals](./udemySql/SQL%20Statement%20Fundamentals/fundamentals.sql)
 2. [GROUP BY Statements](./udemySql/GROUP%20BY%20Statements/groupByStatements.sql)
@@ -50,7 +50,7 @@ Short Glance : [tldr](./udemySql/Screen%2BShot%2B2016-04-17%2Bat%2B12.22.49%2BPM
 6. [Conditional Expressions and Procedures Introduction](./udemySql/Condition%20Expressions%20and%20Procedures%20Introduction/conditionexpressions.sql)
 
 
-### Assessment Test 2
+#### Assessment Test 2
 
 [DateBase](./udemySql/Assessment%20Test%202/exercises.tar)
 
