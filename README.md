@@ -57,6 +57,7 @@ Short Glance : [tldr](./udemySql/Screen%2BShot%2B2016-04-17%2Bat%2B12.22.49%2BPM
 5. [Creating Databases and Tables](./udemySql/Creating%20Databases%20and%20Tables/databasesAndTables.sql)
 6. [Conditional Expressions and Procedures Introduction](./udemySql/Condition%20Expressions%20and%20Procedures%20Introduction/conditionexpressions.sql)
 
+
 ### Assessment Test 2
 
 [DateBase](./udemySql/Assessment%20Test%202/exercises.tar)
