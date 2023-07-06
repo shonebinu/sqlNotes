@@ -34,7 +34,7 @@ PostgreSQL notes taken from multiple online resources
 
 
 ## udemySql
-Sample DataBase : [dvdrental](./udemySql/dvdrental.tar)
+Sample DataBase(PostGreSQL with PgAdmin4) : [dvdrental](./udemySql/dvdrental.tar)
 
 Course Notes : [SQLNotes](./udemySql/SQLNotes.pdf)
 
