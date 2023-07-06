@@ -1,2 +1,2 @@
 # sqlNotes
-PostgreSQL notes taken by me from multiple online resources
+PostgreSQL notes taken from multiple online resources
