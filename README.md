@@ -34,14 +34,6 @@ PostgreSQL notes taken from multiple online resources
 
 
 ## udemySql
-Lecture notes taken by me on the course [The Complete SQL Bootcamp: Go from Zero to Hero](https://www.udemy.com/share/101Whk3@BcgzINuBYu7rVuEJ4GwcHeZXZUiayBbCuYZXbG86Zf9lG9eZcMGv4Cmad6g7PLhH/) by Pierian Data
-
-Course Instructor: [Jose Portilla](https://www.udemy.com/user/joseportilla/)
-
-DataBase : [PostgreSQL](https://www.postgresql.org/)
-
-Database Client : [pgAdmin](https://www.pgadmin.org/)
-
 Sample DataBase : [dvdrental](./udemySql/dvdrental.tar)
 
 Course Notes : [SQLNotes](./udemySql/SQLNotes.pdf)
