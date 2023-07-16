@@ -3,6 +3,8 @@ PostgreSQL notes taken from multiple online resources
 
 ## FreeCodeCamp DBMS course notes 
 
+### Learn Relational Databases by Building a Mario Database
+
 - `psql --username=user_name --dbname=db_name` to connect to the PostGreSQL shell from the terminal. `user_name` and `db_name` is `postgres` if none created.
 - `\l` command is used to list all the databases available in PostGreSQL.
 - `CREATE DATABASE name;` to create a new database.
