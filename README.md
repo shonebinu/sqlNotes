@@ -37,6 +37,8 @@ PostgreSQL notes taken from multiple online resources
 - To drop a constraint, `ALTER TABLE table_name DROP CONSTRAINT constraint_name;`
     - To get the constraint_name, use `SELECT` keyword to print the records and the constraint name will appear at the bottom. Alternatively use the `\d table_name`.
     - Eg. `ALTER TABLE characters DROP CONSTRAINT characters_pkey;`
+- When we add a column with SERIAL data type, a new field with type *sequence* is created in the database. Check it out with `\d`
+- `DATE` datatype is used for storing date's and `NUMERIC(4, 1)` is for decimals that has up to four digits and one of them has to be to the right of the decimal.
 
 
 ## udemySql
