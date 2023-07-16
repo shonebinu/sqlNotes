@@ -32,7 +32,11 @@ PostgreSQL notes taken from multiple online resources
   ('Peach', 'Mushroom Kingdom', 'Pink');
   ```
 - To update a value in the table `UPDATE table_name SET column_name=new_value WHERE condition;`
-
+- To order by column_name, `SELECT columns FROM table_name ORDER BY column_name;`
+- **PRIMARY KEY** is a column that uniquely identifies each row in the table. To set, `ALTER TABLE table_name ADD PRIMARY KEY(column_name);`. Usually PRIMARY KEY is set on every table and there can only be one per table.
+- To drop a constraint, `ALTER TABLE table_name DROP CONSTRAINT constraint_name;`
+    - To get the constraint_name, use `SELECT` keyword to print the records and the constraint name will appear at the bottom. Alternatively use the `\d table_name`.
+    - Eg. `ALTER TABLE characters DROP CONSTRAINT characters_pkey;`
 
 
 ## udemySql
