@@ -17,9 +17,11 @@ PostgreSQL notes taken from multiple online resources
 - To add rows(aka, to add values to the table) `INSERT INTO table_name(column_1, column_2) VALUES(value1, value2);`. In PostGreSQL, strings are within single quotes `'string'`;
 - We can view the date in a table by querying it with the `SELECT` statement. `SELECT columns FROM table_name;`. If I want to list out all the columns, I should use an asterisk `*` which denotes that I want to see all the columns.
 - To delete a record (to delete a row) `DELETE FROM table_name WHERE condition;`
-  Condition can be something like `username='Shone'`  
+  Condition can be something like `username='Shone'`
+- To delete all records from a table `DELETE FROM table_name;`
 - To drop a table entirely `DROP TABLE table_name;`
 - To rename a database `ALTER DATABASE database_name RENAME TO new_database_name;`
+- To drop a database `DROP DATABASE second_database;`
 - `SERIAL` datatype will make a column `INT` with a `NOT NULL` constraint, and automatically increment the integer when a new row is added.
 - To add a not null constraint `ALTER TABLE table_name ADD COLUMN column_name data_type NOT NULL;`.
 - To insert more than one row at a time -> eg:
