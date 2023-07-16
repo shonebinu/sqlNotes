@@ -39,6 +39,13 @@ PostgreSQL notes taken from multiple online resources
     - Eg. `ALTER TABLE characters DROP CONSTRAINT characters_pkey;`
 - When we add a column with SERIAL data type, a new field with type *sequence* is created in the database. Check it out with `\d`
 - `DATE` datatype is used for storing date's and `NUMERIC(4, 1)` is for decimals that has up to four digits and one of them has to be to the right of the decimal.
+- To create a link between two tables, we use foreign key.
+  - `ALTER TABLE table_name ADD COLUMN column_name DATATYPE REFERENCES referenced_table_name(referenced_column_name);`
+- To set a `NOT NULL` constraint `ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;`
+- To add the columns and constraints while creating the table `CREATE TABLE table_name(column_name DATATYPE CONSTRAINTS);`
+    - `CREATE TABLE sounds(sound_id SERIAL PRIMARY KEY);`
+    - Eg. of adding the constraints while altering a table `ALTER TABLE sounds ADD COLUMN filename VARCHAR(40) NOT NULL UNIQUE;`
+- `ALTER TABLE sounds ADD COLUMN character_id INT NOT NULL REFERENCES  characters(character_id);` this is an **one-to-many** relationship, but if we want an one-to-one relation, we can add the UNIQUE constraint while altering the table.
 
 
 ## udemySql
