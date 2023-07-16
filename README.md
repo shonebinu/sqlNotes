@@ -46,7 +46,17 @@ PostgreSQL notes taken from multiple online resources
     - `CREATE TABLE sounds(sound_id SERIAL PRIMARY KEY);`
     - Eg. of adding the constraints while altering a table `ALTER TABLE sounds ADD COLUMN filename VARCHAR(40) NOT NULL UNIQUE;`
 - `ALTER TABLE sounds ADD COLUMN character_id INT NOT NULL REFERENCES  characters(character_id);` this is an **one-to-many** relationship, but if we want an one-to-one relation, we can add the UNIQUE constraint while altering the table.
-
+- **Many-to-many** relationships usually use a *junction* table to link two tables together, forming **two one-to-many** relationships.
+- To set foreign key in an existing column `ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES referenced_table(referenced_column);`
+- Every table should have a primary key, In some cases, we have to create multiple primary key's in a single table. We can create a primary key from two columns, known as a **composite** primary key.
+    - `ALTER TABLE table_name ADD PRIMARY KEY(column1, column2);`
+    - "This table will have multiple rows with the same `character_id`, and multiple rows the same `action_id`. So neither of them are unique. But you will never have the same (`character_id`, `action_id`) pair in a second row. So the two columns together can be used to uniquely identify each row."
+      - here, this is an junction table with name character_actions which connects characters and actions tables to employ many-to-many relation 
+- Enter a join command to see all the info from both tables. `SELECT columns FROM table_1 FULL JOIN table_2 ON table_1.primary_key_column = table_2.foreign_key_column;`
+    - If I have two related tables and have the same `some_id` in two tables as primary key - foreign key pair, I can use the above syntax to connect those two tables.
+- To join three tables `SELECT columns FROM junction_table
+FULL JOIN table_1 ON junction_table.foreign_key_column = table_1.primary_key_column
+FULL JOIN table_2 ON junction_table.foreign_key_column = table_2.primary_key_column;`
 
 ## udemySql
 Sample DataBase(PostGreSQL with PgAdmin4) : [dvdrental](./udemySql/dvdrental.tar)
