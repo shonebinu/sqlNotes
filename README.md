@@ -59,6 +59,7 @@ PostgreSQL notes taken from multiple online resources
 - To join three tables `SELECT columns FROM junction_table
 FULL JOIN table_1 ON junction_table.foreign_key_column = table_1.primary_key_column
 FULL JOIN table_2 ON junction_table.foreign_key_column = table_2.primary_key_column;`
+- To add a constraint using the ALTER command, `ALTER TABLE table_name ADD UNIQUE(column_name);`
 
 ## udemySql
 Sample DataBase(PostGreSQL with PgAdmin4) : [dvdrental](./udemySql/dvdrental.tar)
